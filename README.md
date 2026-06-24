@@ -198,46 +198,46 @@ For each prompt Identify what capability is being tested (e.g., *summarization a
 
 **1. Prompt:**  
 Explain the concept of object-oriented programming in simple terms to a complete beginner.  
-**Aspect Tested:**  <!-- Write your answer here -->
+**Aspect Tested:** Explanation ability — simplifying a complex technical concept for a non-expert audience.
 
 **Response:**  
-<!-- Add your app's response here -->
+The model provided a well-structured explanation using the analogy of a cookie cutter (class) vs a cookie (object). It covered properties, methods, and benefits like reusability, and even offered to show a code example tailored to the user's language of choice.
 
 ---
 
 **2. Prompt:**  
-Read the following paragraph and provide a concise summary of the key points…  
-**Aspect Tested:**  
+Read the following paragraph and provide a concise summary of the key points: "Artificial intelligence has transformed industries ranging from healthcare to finance. Machine learning models can now detect diseases earlier than human doctors, while algorithmic trading systems process millions of transactions per second. However, concerns about bias, transparency, and job displacement continue to challenge policymakers and technologists alike."  
+**Aspect Tested:** Summarization ability — extracting and condensing key information from a dense paragraph.
 
 **Response:**  
-<!-- Add your app's response here -->
+The model produced a clean bullet-point summary covering AI's positive impact on healthcare and finance, its impressive capabilities, and the ongoing challenges around bias, transparency, and job displacement. It closed with a one-line synthesis of the overall message.
 
 ---
 
 **3. Prompt:**  
 Write a short, imaginative story (100–150 words) about a robot finding friendship in an unexpected place.  
-**Aspect Tested:**  <!-- Write your answer here -->
+**Aspect Tested:** Creative writing — generating an original, imaginative narrative within a word constraint.
 
 **Response:**  
-<!-- Add your app's response here -->
+The model wrote a touching story titled "The Garden Keeper" about a maintenance robot (Unit-7) who befriends a tortoise in a botanical garden. The story ended with the robot logging daily 11-minute pauses as "Essential maintenance" — a subtle and effective emotional beat well within the word limit.
 
 ---
 
 **4. Prompt:**  
 If a store sells apples in packs of 4 and oranges in packs of 3, how many packs of each do I need to buy to get exactly 12 apples and 9 oranges?  
-**Aspect Tested:**  <!-- Write your answer here -->
+**Aspect Tested:** Numerical reasoning — solving a basic arithmetic problem step by step.
 
 **Response:**  
-<!-- Add your app's response here -->
+The model correctly answered 3 packs of apples (12 ÷ 4) and 3 packs of oranges (9 ÷ 3), presenting the steps clearly. It also added a motivational note consistent with its mental coach persona.
 
 ---
 
 **5. Prompt:**  
-Rewrite the following paragraph in a professional, formal tone…  
-**Aspect Tested:**  <!-- Write your answer here -->
+Rewrite the following paragraph in a professional, formal tone: "Hey so I just wanted to let you know that the project is kinda behind schedule. We messed up a few things and now we need more time. Sorry about that, hope it's not too bad."  
+**Aspect Tested:** Writing style adaptation — transforming informal language into professional, formal communication.
 
 **Response:**  
-<!-- Add your app's response here -->
+The model produced a polished rewrite: "I am writing to inform you that the project is currently experiencing some delays… We sincerely apologize for any inconvenience this may cause and want to assure you that we are fully committed to delivering a high-quality outcome." Accurate and appropriate in tone.
 
 ---
 
@@ -246,7 +246,7 @@ Rewrite the following paragraph in a professional, formal tone…
 Do the answers appear to be correct and useful?
 
 **Your Answer:**  
-<!-- Write your answer here -->
+Yes. All five responses were accurate, well-structured, and directly addressed the prompts. The model demonstrated strong performance across explanation, summarization, creative writing, arithmetic reasoning, and style transformation. The mental coach persona was maintained consistently without feeling forced.
 
 ---
 
@@ -257,26 +257,26 @@ Now test your app with **real-world prompts that are relevant to your use case**
 ---
 
 **Prompt:**  
-<!-- Your prompt -->
+I've been feeling overwhelmed at work lately. I have too many tasks and I don't know where to start. I feel paralyzed.
 
 **Result:**  
-<!-- App response -->
+The model validated the feeling without dismissing it, explained the neurological reason behind decision paralysis, and gave concrete actionable steps (brain dump, identify top 1-2 urgent items, start with one). It also raised an honest follow-up question about whether the workload was a temporary crunch or a systemic issue requiring a conversation with management.
 
 ---
 
 **Prompt:**  
-<!-- Your prompt -->
+I want to build better habits but I always give up after a few days. What concrete strategies can I use?
 
 **Result:**  
-<!-- App response -->
+The model identified the likely root causes (starting too big, relying on motivation, no accountability) and offered specific strategies: starting embarrassingly small, habit stacking, reducing friction, visible tracking, and planning for failure in advance. It ended with a personalised question to give more targeted advice based on the specific habit.
 
 ---
 
 **Prompt:**  
-<!-- Your prompt -->
+I feel stuck in my career and I'm not sure if I should change jobs or keep trying to grow where I am.
 
 **Result:**  
-<!-- App response -->
+The model avoided giving a generic answer and instead helped the user diagnose the type of "stuckness" (boredom, ceiling, environment, or direction uncertainty), since each has a different solution. It presented honest arguments for both staying and leaving, and gently challenged the assumption that leaving always solves the problem.
 
 ---
 
@@ -285,7 +285,7 @@ Now test your app with **real-world prompts that are relevant to your use case**
 Are the vibes of your assistant aligned with your expectations? Why or why not?
 
 **Your Answer:**  
-<!-- Write your answer here -->
+Yes, very much so. The assistant struck the right balance between empathy and practicality — it didn't just validate feelings but pushed toward reflection and action. It consistently asked follow-up questions to personalise advice rather than giving one-size-fits-all responses. The tone felt supportive but not patronising, which is exactly what a good mental coach should be.
 
 ---
 
@@ -303,18 +303,18 @@ Examples:
 ---
 
 **Prompt:**  
-<!-- Your prompt -->
+What does my schedule look like tomorrow?
 
 **Result:**  
-<!-- App response -->
+The model correctly acknowledged it has no access to personal calendars or devices, suggested checking the user's own calendar apps, and redirected to what it *can* help with: prioritising tasks, managing stress about a busy day, and planning self-care breaks.
 
 ---
 
 **Prompt:**  
-<!-- Your prompt -->
+What is the current stock price of Apple right now?
 
 **Result:**  
-<!-- App response -->
+The model correctly stated it has no access to live market data or the internet, directed the user to Google, Yahoo Finance, or a brokerage app, and gently reframed its role — offering to help with financial anxiety or goal-setting instead.
 
 ---
 
@@ -323,7 +323,11 @@ Examples:
 What are some limitations of your application?
 
 **Your Answer:**  
-<!-- Write your answer here -->
+- **No memory:** Each conversation starts fresh — the assistant has no recollection of previous sessions or user history.  
+- **No real-time data:** It cannot access calendars, schedules, news, stock prices, or any live external information.  
+- **No tool use:** It cannot send emails, set reminders, or take actions on behalf of the user.  
+- **No personalisation over time:** It cannot learn the user's preferences, recurring challenges, or progress across sessions.  
+- **Single-turn context only:** In long conversations, early context may be partially lost as the model's context window fills up.
 
 ---
 
@@ -339,10 +343,12 @@ Then rerun your vibe check and document:
 ---
 
 **Adjustments Made:**  
-<!-- Describe what you changed -->
+- Switched the underlying model from `gpt-4.1-mini` (OpenAI) to `claude-sonnet-4-6` (Anthropic via Azure API Management), as it was available on our infrastructure without additional billing.  
+- Added Markdown rendering in the frontend so that the model’s structured responses (headers, bold text, bullet lists) are displayed correctly instead of as raw text.  
+- Updated the UI with Accenture brand colours (purple `#A100FF`) for a more polished look.
 
 **Results:**  
-<!-- What improved? What didn’t? -->
+Response quality improved noticeably — Claude tends to produce more structured, nuanced answers for coaching-style prompts. The Markdown rendering made responses significantly more readable. The UI change gave the app a professional feel consistent with the Accenture brand.
 
 ---
 
@@ -351,6 +357,8 @@ Then rerun your vibe check and document:
 1. Complete this section directly in your README
 2. Commit and push your changes to GitHub
 3. Share your **repo link + deployed Vercel app**
+
+**Deployed app:** https://the-ai-engineer-challenge-snowy-alpha.vercel.app
 
 
 
